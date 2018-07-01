@@ -90,3 +90,5 @@ class ControllerLibrary(dict):
 
         cmds.playblast(completeFilename=path, forceOverwrite=True, format='image', width=200, height=200, showOrnaments=False, startTime=1, endTime=1, viewer=False)
         return path
+
+
