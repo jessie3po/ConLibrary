@@ -63,7 +63,7 @@ class ControllerLibrary(dict):
             if infoFile in files:
                 infoFile = os.path.join(directory, infoFile)
 
-                # opening file as read function this time, instead of write.
+                # opens file as read function this time, instead of write.
                 with open(infoFile, 'r') as f:
                     info = json.load(f)
             else:
@@ -90,5 +90,4 @@ class ControllerLibrary(dict):
 
         cmds.playblast(completeFilename=path, forceOverwrite=True, format='image', width=200, height=200, showOrnaments=False, startTime=1, endTime=1, viewer=False)
         return path
-
 
